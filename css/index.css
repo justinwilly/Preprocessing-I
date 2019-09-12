@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+@font-face {
+  font-family: 'Bitter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v15/rax8HiqOu8IVPmn7f4xs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+.displayFLex {
+  display: flex;
+  justify-content: center;
+}
+.backgrounGrey {
+  background-color: lightgrey;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Crimson Text', serif;
+  line-height: 1;
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bitter', serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+ol,
+ul {
+  list-style: bullets;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px Solid grey;
+  max-width: 100%;
+}
+html,
+body {
+  height: 62.5%;
+}
+body {
+  line-height: 2;
+  font-size: 1.5rem;
+}
+/*HEADER STYLES*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+}
+.container header {
+  height: 5vh;
+  width: 100%;
+  font-family: 'Bitter', serif;
+  background-color: lightgrey;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container header nav a {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  vertical-align: center;
+}
+/*NAME STYLES*/
+.name {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin-top: 2%;
+}
+@media (max-width: 500px) {
+  .name {
+    width: 100%;
+    padding: 5px;
+  }
+  .name .name-text {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    font-size: 2rem;
+    margin-top: 0% auto;
+    text-align: center;
+    padding: 0px 5%;
+  }
+  .name .name-text button {
+    display: flex;
+    justify-content: center;
+    background: white;
+    vertical-align: top;
+    margin-top: 2%;
+    padding: 8px 44px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .name .name-text button button:hover {
+    background: black;
+    color: white;
+  }
+  .name .name-text button button:hover img {
+    display: flex;
+    margin-top: 5%;
+  }
+}
+/*TOP CONTENT*/
+.top-content {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 89%;
+}
+.top-content .work-content {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+@media (max-width: 500px) {
+  .top-content .work-content {
+    width: 100%;
+    padding: 5px;
+  }
+}
+/*LIST CONTENT*/
+.list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .list {
+    width: 100%;
+    padding: 5px;
+  }
+}
+/*FOOTER STYLES*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 90% auto;
+  background-color: lightgrey;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    width: 100%;
+    padding: 5px;
+  }
+}
